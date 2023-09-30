@@ -1,0 +1,89 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.link {
+  text-decoration: none !important;
+  color: aliceblue !important;
+}
+.mynavbar {
+  background-color: #b55a35;
+  padding: 20px 0;
+}
+.mynavbar .container {
+  display: flex;
+  align-items: center;
+}
+.fathimg {
+  width: 70px;
+}
+.fathimg img {
+  width: 100%;
+}
+.searchbar {
+  height: max-content;
+}
+.searchbar input {
+  border: #e09392 solid 3px;
+  border-radius: 20px;
+  width: 100%;
+  padding: 10px;
+  outline: none;
+}
+/* ________navbar end */
+.cardovar {
+  background-color: rgba(72, 72, 72, 0.515);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 20px;
+  width: 0;
+  font-size: 0;
+  visibility: hidden;
+  transition: 0.3s ease-in-out all;
+}
+.mycard:hover .cardovar {
+  width: 100%;
+  font-size: 20px;
+  visibility: visible;
+}
+.fathimgforinfo {
+  padding: 5px;
+  height: 300px;
+  width: 250px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 25px;
+}
+.downloedbtn,
+.backbtn {
+  background-color: #b55a35;
+  padding: 10px;
+  font-size: 20px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
+  margin-top: 20px;
+}
+.mycard{
+    margin-bottom: 40px !important;
+    overflow: hidden;
+}
