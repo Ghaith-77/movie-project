@@ -5,16 +5,13 @@ import axios from "axios";
 
 const MyCard = ({Movies }) => {
   // ____________
-  function goformoviepage() {
-    MyNavigate(`./moviePage/id=${"2mn"}`);
+  function goformoviepage(id) {
+    MyNavigate(`./moviePage/${id}`);
   }
   let { path } = useLocation();
   let MyNavigate = useNavigate(path);
 
   // __________
-
- 
-  
   return (
     <div className="cards">
       {Movies &&
@@ -23,7 +20,7 @@ const MyCard = ({Movies }) => {
             <Card
               className="bg-dark text-white mycard "
               style={{ width: "270px", height: "350px" }}
-              onClick={goformoviepage}
+              onClick={()=>goformoviepage(e.id)}
             >
               <Card.Img
                 src={`https://image.tmdb.org/t/p/w500${e.poster_path}`}

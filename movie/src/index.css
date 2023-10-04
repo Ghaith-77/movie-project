@@ -3,6 +3,11 @@
   margin: 0;
   box-sizing: border-box;
 }
+.btn_DownloedIt {
+  color: #fff !important;
+  text-decoration: none !important;
+}
+
 .link {
   text-decoration: none !important;
   color: aliceblue !important;
@@ -50,13 +55,15 @@
   visibility: visible;
 }
 .fathimgforinfo {
-  padding: 5px;
-  height: 300px;
-  width: 250px;
+  height: 340px;
+  width: 270px;
   overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
+}
+.movieimg{
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
 }
 .info {
   display: flex;
@@ -83,7 +90,7 @@
   width: 100%;
   margin-top: 20px;
 }
-.mycard{
-    margin-bottom: 40px !important;
-    overflow: hidden;
+.mycard {
+  margin-bottom: 40px !important;
+  overflow: hidden;
 }
